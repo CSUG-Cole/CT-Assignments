@@ -1,0 +1,36 @@
+/* Functions and variables in all caps are implementation specific code and structures that
+ * exist within the implementation language.
+ */
+
+start
+    Declarations
+        number weeklyIncome
+    if ARGCOUNT != 1 then
+        usage()
+        EXIT(1)
+    end if
+    weeklyIncome = STRING_TO_NUMBER(ARGS[0])
+    calculateAverageWithholding(weeklyIncome)
+stop
+
+void usage()
+    output "usage: java com.csc320.module_3.AverageWithholding WEEKLY_INCOME"
+    output ""
+    output "Outputs the amount of tax withholding based on WEEKLY_INCOME."
+return
+
+void calculateAverageWithholding(number income)
+    Declarations
+        number taxes = 0.0
+    output "Weekly income: $", income
+    if income < 500.0 then
+        taxes = income * 0.10; /* taxed at 10% */
+    else if (income < 1500) then
+        taxes = income * 0.15; /* taxed at 15% */
+    else if (income < 2500) then
+        taxes = income * 0.20; /* taxed at 20% */
+    else
+        taxes = income * 0.30; /* taxed at 30% */
+    end if
+    output "Weekly average tax withholding: $", taxes
+return

@@ -1,0 +1,38 @@
+/* if income < 500 */
+$ java com.csc320.module_3.AverageWithholding "100.00"
+Weekly income: $100.00
+Weekly average tax withholding: $10.00
+
+/* income < 1500 */
+$ java com.csc320.module_3.AverageWithholding "500.00"
+Weekly income: $500.00
+Weekly average tax withholding: $75.00
+
+/* if income < 2500 */
+$ java com.csc320.module_3.AverageWithholding "1500.00"
+Weekly income: $1500.00
+Weekly average tax withholding: $300.00
+
+/* if income >= 2500 */
+$ java com.csc320.module_3.AverageWithholding "2500.00"
+Weekly income: $2500.00
+Weekly average tax withholding: $750.00
+
+/* error when no arguments passed in */
+$ java com.csc320.module_3.AverageWithholding
+usage: java com.csc320.module_3.AverageWithholding WEEKLY_INCOME
+
+Outputs the amount of tax withholding based on WEEKLY_INCOME.
+
+/* error when non-number argument passed in */
+$ java com.csc320.module_3.AverageWithholding "number"
+Error: WEEKLY_INCOME should be a number, got 'number'
+usage: java com.csc320.module_3.AverageWithholding WEEKLY_INCOME
+
+Outputs the amount of tax withholding based on WEEKLY_INCOME.
+
+/* error when more than one argument passed in */
+$ java com.csc320.module_3.AverageWithholding "100" "200"
+usage: java com.csc320.module_3.AverageWithholding WEEKLY_INCOME
+
+Outputs the amount of tax withholding based on WEEKLY_INCOME.
