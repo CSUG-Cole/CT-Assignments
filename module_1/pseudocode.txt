@@ -1,0 +1,7 @@
+start
+    output "John"
+    output "Smith"
+    output "15361 US Hwy 2"
+    output "Leavenworth, WA"
+    output "98826"
+stop
