@@ -1,0 +1,11 @@
+# Test 1: Monday (correct)
+Monday
+
+# Test 2: wednesday (misspelled)
+wednesday
+
+# Test 3: week (correct)
+week
+
+# Test 4: Not a valid choice
+test

@@ -1,0 +1,53 @@
+/* Functions and variables in all caps are implementation specific code and structures that
+ * exist within the implementation language, unless otherwise declared.
+ */
+
+/* Develop a Java program that will store data in the form of daily average
+ * temperatures for one week. Store the day and average temperature in two
+ * different arraylists. Your program should prompt the user for the day of the
+ * week (Monday through Sunday) and display both the day and temperature for each
+ * day. If "week" is entered, the output for your program should provide the
+ * temperature for each day and the weekly average. Use the looping and decision
+ * constructs in combination with the arrays to complete this assignment.
+ *
+ */
+
+start
+    Declarations
+        int DAYS_IN_A_WEEK = 7
+        list days = [ Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday ]
+        list avgDailyTemps = [ 48.5, 48, 53, 53.5, 53, 53.5, 53.5 ]
+        string day
+    /* get user input */
+    day = input "Please enter a day of the week (Monday, Tuesday, etc.) to get the daily temperature
+                 or 'week' to get the weekly average: "
+    /* Branch if user asked for a day or the week */
+    if (day is equal to "week") then
+        displayWeeklyTemps(days, avgDailyTemps, DAYS_IN_A_WEEK)
+    else
+        displayDailyTemp(day, days, avgDailyTemps, DAYS_IN_A_WEEK)
+    end if
+stop
+
+void displayWeeklyTemps(list days, list avgDailyTemps, int length)
+    Declarations
+        num weeklyAvgTemp = 0
+    for (int index = 0; index < length; index = index + 1)
+        output "Temperature for ", days[index], " is: ", avgDailyTemps[index], "F"
+        weeklyAvgTemp = weeklyAvgTemp + avgDailyTemps[index]
+    end for
+    output "Average temperature for the week: ", weeklyAvgTemp / DAYS_IN_A_WEEK, "F"
+return
+
+void displayDailyTemp(string day, list days, list avgDailyTemps, int length)
+    /* Search for the desired day */
+    for (int index = 0; index < length; index = index + 1)
+        if (day is equal to days[index]) then
+            output "The temperature for ", days[index], " is: ", avgDailyTemps[index], "F"
+            return /* Return once day is found */
+        end if
+    end for
+
+    /* Desired day was not found, display error */
+    output "The day you entered is not a know day of the week: '", day, "'"
+return

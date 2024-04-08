@@ -1,0 +1,30 @@
+----- RUNNING TEST 1: Monday (correct) -----
+TEST INPUT: 'Monday'
+Please enter a day of the week (Monday, Tuesday, etc.) to get the daily temperature
+or 'week' to get the weekly average: Monday
+The temperature for Monday is: 44.85F
+
+----- RUNNING TEST 2: wednesday (misspelled) -----
+TEST INPUT: 'wednesday'
+Please enter a day of the week (Monday, Tuesday, etc.) to get the daily temperature
+or 'week' to get the weekly average: wednesday
+The day you entered is not a know day of the week: 'wednesday'
+
+----- RUNNING TEST 3: week (correct) -----
+TEST INPUT: 'week'
+Please enter a day of the week (Monday, Tuesday, etc.) to get the daily temperature
+or 'week' to get the weekly average: week
+Temperature for Sunday is: 49.29F
+Temperature for Monday is: 79.62F
+Temperature for Tuesday is: 63.45F
+Temperature for Wednesday is: 42.78F
+Temperature for Thursday is: 60.92F
+Temperature for Friday is: 41.91F
+Temperature for Saturday is: 65.02F
+Average temperature for the week: 57.57F
+
+----- RUNNING TEST 4: Not a valid choice -----
+TEST INPUT: 'test'
+Please enter a day of the week (Monday, Tuesday, etc.) to get the daily temperature
+or 'week' to get the weekly average: test
+The day you entered is not a know day of the week: 'test'
