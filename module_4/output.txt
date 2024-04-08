@@ -1,0 +1,97 @@
+----- RUNNING TEST 1: Standard Input -----
+TEST INPUT: '1.0 2.0 3.0 4.0 5.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $15.0
+Average:                    $3.0
+Maximum:                    $5.0
+Minimum:                    $1.0
+Interest on total at 20%:   $3.0
+
+----- RUNNING TEST 2: Mixed Sign Input -----
+TEST INPUT: '-1.0 2.0 -3.0 4.0 -5.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $-3.0
+Average:                    $-0.6
+Maximum:                    $4.0
+Minimum:                    $-5.0
+Interest on total at 20%:   $-0.6000000000000001
+
+----- RUNNING TEST 3: Input With Non-Float -----
+TEST INPUT: 'a 1.0 2.0 3.0 4.0 5.0'
+Please enter 5 floating point numbers!
+Warning, please enter a floating point number.
+---- Useful info about input ----
+Total:                      $15.0
+Average:                    $3.0
+Maximum:                    $5.0
+Minimum:                    $1.0
+Interest on total at 20%:   $3.0
+
+----- RUNNING TEST 4: All Negative Numbers -----
+TEST INPUT: '-1.0 -2.0 -3.0 -4.0 -5.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $-15.0
+Average:                    $-3.0
+Maximum:                    $-1.0
+Minimum:                    $-5.0
+Interest on total at 20%:   $-3.0
+
+----- RUNNING TEST 5: Floating-Point Precision -----
+TEST INPUT: '1.12345 2.23456 3.34567 4.45678 5.56789'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $16.72835
+Average:                    $3.34567
+Maximum:                    $5.56789
+Minimum:                    $1.12345
+Interest on total at 20%:   $3.3456699371337892
+
+----- RUNNING TEST 6: Zeros and Positives -----
+TEST INPUT: '0 0 1.0 2.0 3.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $6.0
+Average:                    $1.2
+Maximum:                    $3.0
+Minimum:                    $0.0
+Interest on total at 20%:   $1.2000000000000002
+
+----- RUNNING TEST 7: Input Exhaustion Simulation -----
+TEST INPUT: '1.0 2.0'
+Please enter 5 floating point numbers!
+Warning, please enter a floating point number.
+Error, input is exhausted. Exiting.
+
+----- RUNNING TEST 8: Large and Small Values -----
+TEST INPUT: '1.0 20000.0 3.0 -40000.0 5.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $-19991.0
+Average:                    $-3998.2
+Maximum:                    $20000.0
+Minimum:                    $-40000.0
+Interest on total at 20%:   $-3998.2000000000003
+
+----- RUNNING TEST 9: Special Floating-Point Values -----
+TEST INPUT: 'Infinity -Infinity NaN 1.0 2.0'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $NaN
+Average:                    $NaN
+Maximum:                    $Infinity
+Minimum:                    $-Infinity
+Interest on total at 20%:   $NaN
+
+----- RUNNING TEST 10: Very Close Numbers -----
+TEST INPUT: '1.000001 1.000002 1.000003 1.000004 1.000005'
+Please enter 5 floating point numbers!
+---- Useful info about input ----
+Total:                      $5.0000143
+Average:                    $1.0000029
+Maximum:                    $1.000005
+Minimum:                    $1.000001
+Interest on total at 20%:   $1.0000028610229492
+

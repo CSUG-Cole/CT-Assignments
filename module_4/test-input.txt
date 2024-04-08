@@ -1,0 +1,29 @@
+# Test 1: Standard Input
+1.0 2.0 3.0 4.0 5.0
+
+# Test 2: Mixed Sign Input
+-1.0 2.0 -3.0 4.0 -5.0
+
+# Test 3: Input With Non-Float
+a 1.0 2.0 3.0 4.0 5.0
+
+# Test 4: All Negative Numbers
+-1.0 -2.0 -3.0 -4.0 -5.0
+
+# Test 5: Floating-Point Precision
+1.12345 2.23456 3.34567 4.45678 5.56789
+
+# Test 6: Zeros and Positives
+0 0 1.0 2.0 3.0
+
+# Test 7: Input Exhaustion Simulation
+1.0 2.0
+
+# Test 8: Large and Small Values
+1.0 20000.0 3.0 -40000.0 5.0
+
+# Test 9: Special Floating-Point Values
+Infinity -Infinity NaN 1.0 2.0
+
+# Test 10: Very Close Numbers
+1.000001 1.000002 1.000003 1.000004 1.000005

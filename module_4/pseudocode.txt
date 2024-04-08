@@ -1,0 +1,44 @@
+/* Functions and variables in all caps are implementation specific code and structures that
+ * exist within the implementation language.
+ */
+
+start
+    output "Please enter 5 floating point numbers!"
+    processFloats();
+stop
+
+void processFloats()
+    Declarations
+        float max = NEGATIVE_INFINITY
+        float min = MAX_VALUE
+        float sum = 0
+        float value = 0
+        int count = 0
+        boolean running = true
+
+    while (running is true)
+          value = getFloat()
+          count = count + 1
+          if (value > max) then
+              max = value
+          end if
+          if (value < min) then
+              max = value
+          end if
+          sum = sum + value
+
+          if (count == 5) then
+              running = false
+          end if
+    end while
+
+    output "---- Useful info about input ----"
+    output "Total:                      $", sum
+    output "Average:                    $", (sum / 5)
+    output "Maximum:                    $", max
+    output "Minimum:                    $", min
+    output "Interest on total at 20%:   $", (sum * 0.2)
+return
+
+float getFloat()
+return input
