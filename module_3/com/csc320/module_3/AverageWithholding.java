@@ -40,7 +40,8 @@ public class AverageWithholding
         System.out.print(
             "usage: java com.csc320.module_3.AverageWithholding WEEKLY_INCOME\n" +
             "\n" +
-            "Outputs the amount of tax withholding based on WEEKLY_INCOME.\n"
+            "Outputs the amount of tax withholding based on WEEKLY_INCOME.\n" +
+            "WEEKLY_INCOME must be a valid number only. Do not include a dollar sign.\n"
         );
         System.exit(1);
     }
